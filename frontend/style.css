@@ -1,0 +1,41 @@
+
+body{
+    margin: 10px;
+    background-image:url(imagem/planofundo.png);
+    background-size: cover;
+    background-position: center auto;
+    background-repeat: no-repeat;
+    background-color:#ddeafa ;
+}
+
+.pergunta{
+    font-size: 12px;
+    font-style: italic;
+}
+
+.opcao{
+    display: grid;
+    grid-template-columns:100px 100px 100px;
+    margin: 5%;
+   
+}
+
+.opcao img{
+    width: 100px;
+    height: auto;
+    display: block;
+}
+ .pergunta2{
+
+font-size: 12px;
+    font-style: italic;
+ }
+
+ .opcao {
+    cursor: pointer;
+}
+
+.opcao.selecionada {
+    border: 3px solid blue;
+    background-color: #dbeafe;
+}
