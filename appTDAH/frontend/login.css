@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("imagem/fundologin.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.peca {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.peca img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.peca1 {
+    top: -150px;
+    left: -150px;
+    animation: juntar1 2s forwards;
+}
+
+.peca2 {
+    top: -150px;
+    right: -150px;
+
+    animation: juntar2 2s forwards;
+}
+
+.peca3 {
+    bottom: -150px;
+    left: -150px;
+    animation: juntar3 2s forwards;
+}
+
+.peca4 {
+    bottom: -150px;
+    right: -150px;
+
+    animation: juntar4 2s forwards;
+}
+
+
+@keyframes juntar1 {
+    from {
+        top: -150px;
+        left: -150px;
+    }
+
+    to {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes juntar2 {
+    from {
+        top: -150px;
+        right: -150px;
+    }
+
+    to {
+        top: 0;
+        right: 0;
+    }
+}
+
+@keyframes juntar3 {
+    from {
+        bottom: -150px;
+        left: -150px;
+    }
+
+    to {
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@keyframes juntar4 {
+    from {
+        bottom: -150px;
+        right: -150px;
+    }
+
+    to {
+        bottom: 0;
+        right: 0;
+    }
+}
